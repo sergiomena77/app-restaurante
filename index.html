@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANTE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- aqui empieza el header -->
+        <header class='text-center'>
+            <h1  class="animate__animated animate__fadeInLeftBig display-4">CASA MARIA TERESA</h1>
+            <h2 class="animate__animated animate__fadeInLeftBig display-5"> Comida Tradicional en el centro de la Ciudad</h1>
+        </header>
+        <!-- Aqui acaba el header -->
+
+        <!-- Aqui empieza el navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="collapse" href="#primeros">PRIMEROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#segundos">SEGUNDOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"data-bs-toggle="collapse"  href="#postres">POSTRES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"data-bs-toggle="collapse"  href="#vinos">VINOS</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!--Aqui acaba el navbar-->
+        <!--aqui empiezan filtros-->
+        <div class="etiquetas mb-3 mt-3">
+            <span class="badge rounded-pill bg-primary"> TODOS </span>
+            <span class="badge rounded-pill bg-success"> VEGANOS </span>
+            <span class="badge rounded-pill bg-warning"> CARNE </span>
+            <span class="badge rounded-pill bg-danger"> PESCADO </span>
+            <span class="badge rounded-pill bg-dark"> LÁCTEO </span>
+            <span class="badge rounded-pill bg-info"> TRADICIONAL</span>
+        </div>
+
+        <div class="container-platos">
+            <div id="primeros" class="collapse platos">
+                <!-- ficha 1 -->
+                <div class="card mb-3 mt-2 ">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6 miniatura">
+                            <img src="sopa-de-ajo-castellana.jpg" class="img-fluid rounded-start" alt="sopa-castellana">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">SOPA CASTELLANA</h5>
+                                <p class="card-text">Sopa de ajo y pimentón.</p>
+                            
+                                <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 2 -->
+                <div class="card mb-3 mt-2 ">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="judias-chorizo.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">JUDIAS CON CHORIZO</h5>
+                                <p class="card-text">Legumbres con cariño.</p>
+                           
+                                <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 3 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="ensalada-valenciana.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">ENSALADA VALENCIANA</h5>
+                                <p class="card-text">Lechuga con tomate y algún espárrago </p>
+                                <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 4 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="paella-mixta.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">PAELLA MIXTA</h5>
+                                <p class="card-text">Arroz con marisco y pollo.</p>
+                                <p class="card-text"><small class="text-dark">PRECIO 4.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 5-->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="macarrones-boloñesa.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">MACARRONES BOLOÑESA</h5>
+                                <p class="card-text">Pasta italiana con carne boloñesa</p>
+                                <p class="card-text"><small class="text-dark">PRECIO 5.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- fin de primeros-->
+            <!-- comienza los segundos -->
+            <div id="segundos" class="collapse platos">
+                <!-- ficha 1 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="churrasco.jpg" class="img-fluid rounded-start" alt="">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">CHURRASCO DE TERNERA</h5>
+                                <p class="card-text">La mejor ternera a la brasa</p>
+                                <p class="card-text"><small class="text-dark">PRECIO 10.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 2 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="merluza-rebozada.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">MERLUZA A LA ROMANA</h5>
+                                <p class="card-text">Un clásico del cantábrico</p>
+                                <p class="card-text"><small class="text-dark">PRECIO 9.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 3 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="Entrecot.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">ENTRECOT DE BUEY</h5>
+                                <p class="card-text">Chuletón a la brasa en su punto </p>
+                                <p class="card-text"><small class="text-dark">PRECIO 11.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 4 -->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="Costillitas.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">COSTILLAR DE CERDO</h5>
+                                <p class="card-text"> Deliciosa carne ahumada.</p>
+                                <p class="card-text"><small class="text-dark">PRECIO 12.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ficha 5-->
+                <div class="card mb-3 mt-2">
+                    <div class="row g-0">
+                        <div class="col-md-4 col-6">
+                            <img src="conejo.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <div class="card-body">
+                                <h5 class="card-title">CONEJO AL AJILLO </h5>
+                                <p class="card-text">Del campo a la mesa. </p>
+                                <p class="card-text"><small class="text-dark">PRECIO 8.00$</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- termina los segundos -->
+                 
+            <!-- comienza los postres -->
+                 <div id="postres" class="collapse platos">
+                    <!-- ficha 1 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="natillasl.jpg" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title"> NATILLAS</h5>
+                                    <p class="card-text"> Casera hecha por la abuela</p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 2 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="fruta.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">FRUTA</h5>
+                                    <p class="card-text">Recién salida del huerto </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 3 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="flan.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">FLAN</h5>
+                                    <p class="card-text">El mejor flan del pais casero </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 3.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 4 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="Arroz-con-leche.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">ARROZ CON LECHE</h5>
+                                    <p class="card-text"> El mejor arroz con leche de la ciudad.</p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 4.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 5-->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="Tiramisú.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">TIRAMISÚ </h5>
+                                    <p class="card-text">Una explosión de sabor,casero. </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 5.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- termina los postres -->
+                <!-- comienza los vinos -->
+                <div id="vinos" class="collapse platos">
+                    <!-- ficha 1 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="verdejo.jpg" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title"> VERDEJO</h5>
+                                    <p class="card-text"> Vino semi-seco</p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 8.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 2 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="rioja.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">RIOJA</h5>
+                                    <p class="card-text">Vino tinto </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 7.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 3 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="esencia.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">ESENCIA-27</h5>
+                                    <p class="card-text">Vino blanco. </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 10.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 4 -->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="ribera.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">RIBERA</h5>
+                                    <p class="card-text"> Vino tinto.</p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 7.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ficha 5-->
+                    <div class="card mb-3 mt-2">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-6">
+                                <img src="finca-la-estacada.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">LA ESTACADA </h5>
+                                    <p class="card-text">Vino tinto </p>
+                                    <p class="card-text"><small class="text-dark">PRECIO 9.00$</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- termina los vinos -->
+
+
+        </div> <!-- fin de container platos-->
+        <!-- aqui irá el footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <i class="bi bi-bootstrap"></i>
+                </a>
+                <span class="text-muted">© SERGIO MENA, 2022</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"> CONTÁCTANOS --> <i class="bi bi-phone"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-github"></i></a></li>
+            </ul>
+        </footer>
+        <!-- aqui acaba el footer-->
+    </div>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>
